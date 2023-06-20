@@ -1,0 +1,14 @@
+version: '3'
+
+services: 
+  app:
+    image: srivi182002/portfolio:1.0
+    ports:
+      - "8081:80"
+    volumes: 
+      - myvolume100:/usr/share/nginx/html
+        
+    restart: always    
+
+volumes: 
+  myvolume100:
